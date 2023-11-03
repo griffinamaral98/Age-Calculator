@@ -1,13 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 154px 300px 155px 300px;
+  overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  display: flex;
+  width: 710px;
+  padding: 56px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 24px 24px 200px 24px;
+  background-color: #fff;
+}
+
+.form-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.form-container input {
+  display: flex;
+  align-items: center;
+  width: 90px;
+  padding: 12px 24px;
+  gap: 16px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.32px;
+  color: #151515;
+}
+
+.form-container label {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: #716f6f;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.line-container {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+
+.line {
+  width: 632px;
+  height: 1px;
+  align-self: center;
+  background-color: #dcdcdc;
+}
+
+.line-down {
+  display: flex;
+  width: 86px;
+  height: 86px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 216px;
+  background-color: #854dff;
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.results-text-container {
+  display: flex;
+  gap: 8px;
+}
+
+.dashes,
+.results {
+  font-family: Poppins;
+  font-size: 104px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 110%;
+  letter-spacing: -2.08px;
+}
+
+.dashes {
+  color: #854dff;
+}
+
+.results {
+  color: #151515;
 }
