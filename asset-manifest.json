@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.c1dcfdee.css",
-    "main.js": "/react-gh-pages/static/js/main.e434ad87.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.c1dcfdee.css.map": "/react-gh-pages/static/css/main.c1dcfdee.css.map",
-    "main.e434ad87.js.map": "/react-gh-pages/static/js/main.e434ad87.js.map"
+    "main.css": "/Age-Calculator/static/css/main.c1dcfdee.css",
+    "main.js": "/Age-Calculator/static/js/main.e434ad87.js",
+    "index.html": "/Age-Calculator/index.html",
+    "main.c1dcfdee.css.map": "/Age-Calculator/static/css/main.c1dcfdee.css.map",
+    "main.e434ad87.js.map": "/Age-Calculator/static/js/main.e434ad87.js.map"
   },
   "entrypoints": [
     "static/css/main.c1dcfdee.css",
