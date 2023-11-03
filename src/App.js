@@ -4,29 +4,42 @@ import Line from "./components/Line";
 import Results from "./components/Results";
 
 function App() {
-  const [years, setYears] = useState("");
-  const [months, setMonths] = useState("");
-  const [days, setDays] = useState("");
+  const [date, setDate] = useState({
+    years: "",
+    months: "",
+    days: "",
+  });
 
-  const handleSetYears = (e) => {
-    setYears(e.target.value);
+  const [errors, setErrors] = useState({
+    dayError: false,
+    monthError: false,
+    yearError: false,
+  });
+
+  const handleSetError = (field, value, maxValue) => {
+    setErrors((prevErrors) => ({
+      ...prevErrors,
+      [field]: value > maxValue,
+    }));
   };
-  const handleSetMonths = (e) => {
-    setMonths(e.target.value);
-  };
-  const handleSetDays = (e) => {
-    setDays(e.target.value);
+
+  const handleInputChange = (field, e) => {
+    setDate((prevDate) => ({
+      ...prevDate,
+      [field]: e.target.value,
+    }));
   };
 
   return (
     <div className="container">
       <Form
-        onSetYears={handleSetYears}
-        onSetMonths={handleSetMonths}
-        onSetDays={handleSetDays}
+        date={date}
+        errors={errors}
+        onInputChange={handleInputChange}
+        onSetError={handleSetError}
       />
       <Line />
-      <Results years={years} months={months} days={days} />
+      <Results date={date} errors={errors} />
     </div>
   );
 }
