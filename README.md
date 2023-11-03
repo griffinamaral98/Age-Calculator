@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Completed project](./completed.png)
+![Completed project](./completed.PNG)
 
 ### Links
 
